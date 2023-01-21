@@ -242,7 +242,7 @@
 }
 .shopper {
   display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr, 3fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -277,11 +277,12 @@ padding: 0 1em;
   content:'\2013';
   transition: 2s;
 }
-.side-nav .loaded{
+.side-nav a.loaded:before{
   content: none;
 }
   /*END MAIN STYLES*/
-
+/* VARIABLES */
+/*END VARIABLES*/
 /*RESPONSIVE*/
 @media only screen and (max-width:600px){
   nav {
