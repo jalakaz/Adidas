@@ -120,6 +120,7 @@
       width: 90%;
       max-width: 1400px;
       margin: 0 auto;
+      margin-top: 2em;
   }
   .d-flex{
       display: flex;
@@ -132,7 +133,7 @@
         align-items: center;
   }
   .active {
-      color: #ed27ff;
+      color: #000000;
   }
   #line {
       border-left: 2px solid #e0e0e0;
@@ -197,10 +198,96 @@
     height: 27px;
     width: 27px;
 }
+#header {
+  margin-top: 0;
+}
+.shop {
+  padding:4em 0 0;
+  height:100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.60)), url(https://images.pexels.com/photos/2918534/pexels-photo-2918534.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 0.5rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  color:white;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+.shopper {
+  display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+.shop-grid {
+  background-color: #f3f3f5;
+}
+.side-nav {
+  flex-direction: column;
+}
+.side-nav a {
+text-decoration: none;
+color: #696969;
+font-size: 1.2em;
+text-transform: uppercase;
+margin: 1em 0;
+font-weight: 600;
+padding: 0 1em;
+}
+.side-nav .loaded {
+  color:white;
+  letter-spacing: 12px;
+  font-size: 1.4em;
+  margin: 1.5em 0;
+}
+.side-nav a:hover{
+  color:white;
+  transition: 0.3s;
+}
+.side-nav a:hover::before {
+
+  content:'\2013';
+  transition: 2s;
+}
+.side-nav .loaded{
+  content: none;
+}
   /*END MAIN STYLES*/
 
 /*RESPONSIVE*/
 @media only screen and (max-width:600px){
+  nav {
+    justify-content: space-between;
+    width:100%;
+  }
   header{
     margin: 1em auto 0;
     padding: 1em;
@@ -208,7 +295,10 @@
   .wrapper{
     padding: 1em;
   }
- nav{
+ .sec-nav{
+    display: none;
+  }
+  .sec-nav, #line {
     display: none;
   }
   .big-text {

@@ -13,15 +13,16 @@
 </head>
 
 <body>
-    <header class="d-flex space-between h-center">
+    <section class="shop">
+        <header class="d-flex space-between h-center" id="header">
         <nav class="d-flex h-center">
         <div class="logo">
             <img src="assets/icons/Adidas_Logo.svg" alt="">
         </div>
         <div class="main-nav d-flex h-center">
         <div id="line"></div>
-            <a href="shop.html"><i class="fa fa-store"></i></a>
-            <a href="index.html" class="active"><i class="fa fa-shoe-prints"></i></a>
+            <a href="shop.html" class="active"><i class="fa fa-store"></i></a>
+            <a href="index.html"><i class="fa fa-shoe-prints"></i></a>
             <a href=""><i class="fa fa-shirt"></i></a>
             <a href=""><i class="fa fa-heart"></i></a>
         </div>
@@ -35,21 +36,31 @@
             <a href="#" class="user-id"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt=""></a>
         </div>
     </header>
-    <section class="hero wrapper">
-        <img src="/assets/images/image-removebg-preview (1).png" alt="">
-        <h1 class="big-text">Adidas</h1>
-    <div class="hero-copy">
-        <h4>29 Underground Sneaker</h4>
-        <p>Designed by Jesus itself</p>
-        <a class="btn btn-primary" href="#">Add to cart</a>
-    </div>
-    <div class="color-picker d-flex h-center">
-        <h6>Choose your color</h6>
-        <input type="color" name="red" value="#f3f3f5">
-        <input type="color" name="red" value="#000000">
-        <input type="color" name="red" value="#007786">
-        <input type="color" name="red" value="#ff0000">
-    </div>
-    </section>
+    <div class="search wrapper">
+        <div class="searchBar">
+            <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#ffffff" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="shopper wrapper">
+            <div class="side-nav d-flex">
+                <a href="">wings</a>
+                <a href="">shoes</a>
+                <a href="">letters</a>
+                <a href="">stuff</a>
+                <a href="">xeno</a>
+                <a href="" class="loaded"><i class="fa fa-grip-lines"></i>sneakers</a>
+                <a href="">etc</a>
+                <a href="">etc</a>
+            </div>
+            <div class="shop-grid">
+
+            </div>
+        </div>
+</section>
+
 </body>
 </html>
