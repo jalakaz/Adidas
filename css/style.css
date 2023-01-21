@@ -79,7 +79,7 @@
   
   h1 {
     margin-top: 0;
-    font-size: 3.052rem;
+    font-size: 1em;
   }
   
   h2 {font-size: 2.441rem;}
@@ -175,7 +175,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size:20em;
+    font-size: 20em;
 }
 .hero-copy {
     position: absolute;
@@ -199,4 +199,41 @@
 }
   /*END MAIN STYLES*/
 
-  
+/*RESPONSIVE*/
+@media only screen and (max-width:600px){
+  header{
+    margin: 1em auto 0;
+    padding: 1em;
+  }
+  .wrapper{
+    padding: 1em;
+  }
+ nav{
+    display: none;
+  }
+  .big-text {
+    font-size: 3em;
+  }
+  .hero{
+    height: 80vh;
+  }
+  .hero .big-text{
+    top: 25%;
+    font-size:7em;
+  }
+  .hero-copy{
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .hero-copy h4{
+    font-size: 24px;
+  }
+  .hero-copy p{
+    margin-bottom: 16px;
+  }
+ .btn-primary{
+  padding: 8px 16px;
+ }
+}
+/*END RESPONSIVE*/
